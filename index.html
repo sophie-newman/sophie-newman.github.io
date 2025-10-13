@@ -5,16 +5,36 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-    <head>
-        <title>Sophie Newman</title>
-        <link rel="icon" href="favicon.ico" type="image/x-icon">
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="assets/css/ads_query_importer_widget.css" type="text/css" /> 
+<head>
+    <title>Sophie Newman</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    
+    <link rel="stylesheet" href="assets/css/ads_query_importer_widget.css" type="text/css" />
+    
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        // Mandatory parameter: Search by your ORCID using the ADS classic query format
+        var ads_query_url = 'http://adsabs.harvard.edu/cgi-bin/basic_connect?qsearch=orcid:0009-0001-3422-3048';
         
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="stylesheet" href="assets/css/main.css" />
-        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-    </head>
+        // Optional parameters for customization
+        var ads_query_title = "My Publications (NASA ADS)";
+        var ads_query_highlight_author = 'Newman'; // Use your last name to highlight your authorship
+        var ads_query_max_num_authors = 10;
+        var ads_query_max_records_to_print = 50;
+        var ads_query_omit_bibcode = true; // Omit the raw bibcode
+        var ads_query_link_on_field = 'title'; // Make the paper title link to ADS
+        var ads_query_print_order = 'title|authors|journal|date'; // Print order
+    </script>
+    
+    <script type="text/javascript" src="assets/js/ads_query_importer_widget.js"></script>
+
+</head>
 
 	<body class="is-preload">
 
@@ -86,18 +106,19 @@
 
 						<!-- Publications Section -->
 							<section id="publications" class="main">
-								<header class="major">
-									<h2>Publications</h2>
-									<p>Below you can find a list of my publications, including two first-author papers.</p>
-								</header>
-								
-								<div id="ads_query_importer_widget">
-									<p>Loading publications from NASA ADS...</p>
-								</div>
-								<ul class="actions special">
-									<li><a href="https://ui.adsabs.harvard.edu/search/q=orcid%3A0009-0001-3422-3048&sort=date%20desc" target="_blank" class="button">View all on ADS</a></li>
-								</ul>
-							</section>
+                                <header class="major">
+                                    <h2>Publications</h2>
+                                    <p>Below you can find a list of my publications, including two first-author papers.</p>
+                                </header>
+                                
+                                <div id="ads_query_importer_widget">
+                                    <p>Loading publications from NASA ADS...</p>
+                                </div>
+                                <ul class="actions special">
+                                    <li><a href="https://ui.adsabs.harvard.edu/search/q=orcid%3A0009-0001-3422-3048&sort=date%20desc" target="_blank" class="button">View all on ADS</a></li>
+                                </ul>
+                                
+                            </section>
 
 
 						<!-- Conferences Section -->
@@ -183,23 +204,7 @@
 			</div>
 
 		<!-- Scripts -->
-        <script src="assets/js/jquery.min.js"></script>
-            
-            <script type="text/javascript">
-                // Mandatory parameter: The URL for your ORCID search query
-                // Note: The ADS classic interface URL is used here as per the widget's design
-                var ads_query_url = "http://adsabs.harvard.edu/cgi-bin/basic_connect?qsearch=orcid:0009-0001-3422-3048";
-
-                // Optional parameters to customize the output:
-                var ads_query_title = "Publications (NASA ADS)";
-                var ads_query_max_records_to_print = "50";
-                var ads_query_link_on_field = "title";
-                var ads_query_print_order = "title|authors|journal|date";
-            </script>
-            
-            <script type="text/javascript" src="assets/js/ads_query_importer_widget.js"></script>
-
-            <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
             <script src="assets/js/jquery.scrolly.min.js"></script>
             <script src="assets/js/browser.min.js"></script>
             <script src="assets/js/breakpoints.min.js"></script>
