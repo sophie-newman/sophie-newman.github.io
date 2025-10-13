@@ -80,24 +80,29 @@
 								</div>
 							</section>
 
-						<!-- Publications Section -->
-                            <section id="publications" class="main special">
-                                <header class="major">
-                                    <h2>Publications (NASA ADS)</h2>
-                                    <p>Find the papers I have contributed to below, including my two first-author works.</p>
-                                </header>
-                                
-                                                                <p id="status-message">Loading publications... Please wait.</p>
-                                <ul id="publication-list" style="text-align: left; padding: 0;">
-                                                                    </ul>
-                                <p class="error-message" style="color: red;"></p>
 
-                                <footer class="major">
-                                    <ul class="actions special">
-                                        <li><a href="https://ui.adsabs.harvard.edu/search/q=orcid%3A0009-0001-3422-3048&sort=date%20desc" target="_blank" class="button">View on ADS</a></li>
-                                    </ul>
-                                </footer>
-                            </section>
+						<!-- Publications Section -->
+							<section id="publications" class="main">
+								<header class="major">
+									<h2>Publications (NASA ADS)</h2>
+									<p>A list of my publications as indexed by NASA ADS using my ORCID.</p>
+								</header>
+								
+								<ads-query 
+									query="orcid:0009-0001-3422-3048" 
+									sort="date"
+									rows="50"
+									format="citations">
+									
+									<p>Loading publications from NASA ADS...</p>
+								</ads-query>
+								<footer class="major">
+									<ul class="actions special">
+										<li><a href="https://ui.adsabs.harvard.edu/search/q=orcid%3A0009-0001-3422-3048&sort=date%20desc" target="_blank" class="button">View all on ADS</a></li>
+									</ul>
+								</footer>
+							</section>
+
 
 						<!-- Conferences Section -->
 							<section id="conferences" class="main">
@@ -182,6 +187,9 @@
 			</div>
 
 		<!-- Scripts -->
+			<script src="https://adsabs.github.io/Nasa-ADS-Query-Importer-Widget/ads_embed_widget.js"></script> <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery.scrollex.min.js"></script>
+
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
@@ -190,77 +198,9 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-            <script>
-                // IMPORTANT: REPLACE 'YOUR_ADS_API_KEY' with your actual token
-                const ADS_API_KEY = 'sKeOPlcs6zDdb9Df5LXwCw6Be5OIcz0v3tlodNBa'; 
-                const ORCID = '0009-0001-3422-3048';
-                
-                // API Query: searches for the ORCID, requests relevant fields, and sorts by date.
-                const API_URL = 
-                    `https://api.adsabs.harvard.edu/v1/search/query?q=orcid%3A${ORCID}&fl=title,author,year,pub,bibcode,doi&rows=50&sort=date%20desc`;
-    
-                const listContainer = document.getElementById('publication-list');
-                const statusMessage = document.getElementById('status-message');
-                const errorMessage = document.querySelector('.error-message');
-    
-                function fetchADSPublications() {
-                    if (ADS_API_KEY === 'YOUR_ADS_API_KEY') {
-                        statusMessage.textContent = 'ERROR: Please replace "YOUR_ADS_API_KEY" with your actual NASA ADS API Token.';
-                        return;
-                    }
-    
-                    fetch(API_URL, {
-                        method: 'GET',
-                        headers: {
-                            'Authorization': `Bearer ${ADS_API_KEY}`,
-                            'Content-Type': 'application/json'
-                        }
-                    })
-                    .then(response => {
-                        if (!response.ok) {
-                            throw new Error(`HTTP error! Status: ${response.status}. Check API Key.`);
-                        }
-                        return response.json();
-                    })
-                    .then(data => {
-                        // Hide loading message
-                        statusMessage.style.display = 'none';
-    
-                        if (data.response.numFound === 0) {
-                            listContainer.innerHTML = '<li>No publications found for this ORCID.</li>';
-                            return;
-                        }
-    
-                        data.response.docs.forEach(doc => {
-                            const li = document.createElement('li');
-                            li.style.marginBottom = '20px'; // Add spacing
-    
-                            // Construct the title link using the Bibcode
-                            const bibcodeLink = `https://ui.adsabs.harvard.edu/abs/${doc.bibcode}/abstract`;
-                            const title = `<a href="${bibcodeLink}" target="_blank" rel="noopener noreferrer"><strong>${doc.title[0]}</strong></a>`;
-                            
-                            // Format authors (take the first 3, then "et al." if more)
-                            const authors = doc.author.length > 5 
-                                ? `${doc.author.slice(0, 5).join(', ')}, et al.` 
-                                : doc.author.join(', ');
-                            
-                            // Construct publication line (e.g., Authors (Year). Journal/Pub.)
-                            const pubLine = `${authors} (${doc.year}). ${doc.pub}.`;
-    
-                            li.innerHTML = `${title}<br>${pubLine}`;
-                            listContainer.appendChild(li);
-                        });
-                    })
-                    .catch(error => {
-                        console.error('Error fetching ADS data:', error);
-                        statusMessage.style.display = 'none';
-                        errorMessage.textContent = `Could not load publications. Please check your network connection and that the API key is correct.`;
-                    });
-                }
-    
-                // Call the function to fetch and display the data when the page loads
-                fetchADSPublications();
-            </script>
+			<script src="assets/js/jquery.min.js"></script>
+
+
                 </body>
 </html>
 
