@@ -35,7 +35,7 @@
 						                high redshift, characterized by strong emission lines, motivating us to integrate nebular emission into the M13 stellar population
 						                model. </p>
 
-						                <p> I used the photoionisation code <code>Cloudy</code> to add nebular emission to new stellar population models by Maraston. 
+						                <p> This motivated me to use the photoionisation code <code>Cloudy</code> to add nebular emission new stellar population models by Maraston. 
 						                I compared these to recent data by JWST and found that different modelling assumptions in stellar population models 
 						                lead to very different predictions for the strength of the [O III] line which can lead to qualitative errors and highlights
 						                the need for careful model selection when interpreting observations.</p>
@@ -45,6 +45,28 @@
 								</ul>
 
                 
+							</section>
+
+							<!-- Simulation-Based Inference -->
+							<section id="sbi" class="main">
+								<h2>Simulation-Based Inference</h2>
+								<p>Traditional approaches to parameter inference rely on explicit likelihood functions, which are often intractable in complex astrophysical
+								models. Simulation-Based Inference (SBI) offers a powerful alternative by directly learning the mapping between simulated data and model
+								parameters using machine learning. This framework allows one to extract posteriors even when the likelihood is unknown, by training neural
+								networks on forward-modeled simulations.</p>
+
+								<p>I use SBI techniques such as neural density estimation to constrain physical parameters from simulated
+								galaxy spectra and photometry. By integrating simulation pipelines with inference frameworks, I can efficiently explore parameter spaces,
+								quantify uncertainties, and connect theoretical models more directly to observations.</p>
+							</section>
+
+
+							<!-- Working with Simulations and Semi-Analytic Models -->
+							<section id="sams" class="main">
+								<h2>Working with Simulations and Semi-Analytic Models</h2>
+								<p>To interpret observed galaxy populations, I combine stellar and AGN SED models with cosmological simulations and semi-analytic models (SAMs)
+								of galaxy formation. These tools bridge small-scale physical processes, such as star formation and feedback, with large-scale structure
+								formation in the Universe.</p>
 							</section>
 
 					</div>
