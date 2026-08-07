@@ -1,0 +1,37 @@
+---
+layout: default
+title: Collaborations | Sophie Newman
+header_title: Collaborations
+nav_active: collaborations
+---
+
+<section id="content" class="main">
+
+	{% for collab in site.data.collaborations %}
+	<article class="collaboration" style="margin-bottom: 2.5em;">
+		<h2>{{ collab.name }}</h2>
+		{% if collab.tagline %}<p><em>{{ collab.tagline }}</em></p>{% endif %}
+
+		{{ collab.description_html }}
+
+		{% if collab.websites %}
+		<h3>Websites</h3>
+		<ul class="actions">
+			{% for site_link in collab.websites %}
+			<li><a href="{{ site_link.url }}" class="button">{{ site_link.label }}</a></li>
+			{% endfor %}
+		</ul>
+		{% endif %}
+
+		{% if collab.papers %}
+		<h3>Relevant Papers</h3>
+		<ul>
+			{% for paper in collab.papers %}
+			<li>{% if paper.url %}<a href="{{ paper.url }}">{{ paper.label }}</a>{% else %}{{ paper.label }}{% endif %}</li>
+			{% endfor %}
+		</ul>
+		{% endif %}
+	</article>
+	{% endfor %}
+
+</section>

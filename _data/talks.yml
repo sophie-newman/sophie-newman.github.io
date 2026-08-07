@@ -1,0 +1,100 @@
+# Ordered most recent year first; entries within a year are in roughly
+# chronological order. Add a new entry anywhere in its year's block.
+
+- year: 2026
+  title: "Galaxies Group Meeting (recurring)"
+  venue: "Institute of Cosmology &amp; Gravitation, University of Portsmouth"
+  dates: "2024, 2025, 2026"
+  role: "Speaker"
+
+- year: 2026
+  title: "Simulation Based Inference for Galaxy Evolution meeting"
+  venue: "University of Cambridge"
+  url: "https://sbi-galev.github.io/2026/"
+  dates: "2026"
+  role: "Speaker"
+
+- year: 2026
+  title: "Pre-doc Symposium"
+  venue: "Center for Computational Astrophysics, Flatiron Institute, New York"
+  dates: "2026"
+  role: "Speaker"
+
+- year: 2025
+  title: "VIRGO consortium meeting"
+  venue: "University of Sussex"
+  dates: "20th-24th January 2025"
+  role: "Speaker"
+
+- year: 2025
+  title: "Exploring extreme stellar populations and initial mass function in the Universe: Bridging Observations and Theory from Low to High Redshifts"
+  venue: "Royal Astronomical Society, London"
+  url: "https://www.ras.ac.uk/events-and-meetings/ras-meetings/exploring-extreme-stellar-populations-and-initial-mass-function"
+  dates: "14th March 2025"
+  role: "Speaker"
+
+- year: 2025
+  title: "Simulation Based Inference for Galaxy Evolution"
+  venue: "University of Bristol"
+  dates: "27th&ndash;30th May 2025"
+  role: "Local Organising Committee"
+
+- year: 2025
+  title: "Festival of Doctoral Research"
+  venue: "University of Portsmouth"
+  dates: "10th July 2025"
+  role: "2nd place in competition"
+
+- year: 2025
+  title: "Galaxy Formation Meeting"
+  venue: "Center for Computational Astrophysics, Flatiron Institute, New York"
+  dates: "2025"
+  role: "Speaker"
+
+- year: 2024
+  title: "BiD4BESt (Big Data applications for Black hole Evolution Studies)"
+  venue: "University of Southampton"
+  dates: "8th February 2024"
+  role: "Attendee"
+
+- year: 2024
+  title: "A Multi-Tracer View of Galaxies in the First Few Billion Years"
+  venue: "Royal Astronomical Society, London"
+  dates: "9th February 2024"
+  role: "Attendee"
+
+- year: 2024
+  title: "Simulation Based Inference for Galaxy Evolution"
+  venue: "University of Bristol"
+  dates: "11th April 2024"
+  role: "Attendee"
+
+- year: 2024
+  title: "Faculty of Tech conference"
+  venue: "University of Portsmouth"
+  dates: "4th June 2024"
+  role: "Poster presented"
+
+- year: 2024
+  title: "Galaxy Formation and Evolution in a Cosmological Context"
+  venue: "Spetses, Greece"
+  dates: "16th &ndash; 23rd June 2024"
+  role: "Attendee"
+
+- year: 2024
+  title: "A Conversation on the Interpretation of Stellar Populations in the High-Redshift Universe"
+  venue: "University of Warwick"
+  dates: "29th August 2024"
+  role: "Speaker"
+
+- year: 2024
+  title: "Advanced Cosmology and Extragalactic School (ACES)"
+  venue: "University of Sussex"
+  dates: "2nd - 6th September 2024"
+  role: "Attendee"
+
+- year: 2024
+  title: "Monday Seminar Series"
+  venue: "Institute of Cosmology &amp; Gravitation, University of Portsmouth"
+  dates: "2024"
+  role: "Speaker"

@@ -1,0 +1,30 @@
+---
+layout: default
+title: Meetings | Sophie Newman
+header_title: Meetings
+nav_active: meetings
+---
+
+<section id="content" class="main">
+
+	{% assign current_year = "" %}
+	{% for talk in site.data.talks %}
+		{% if talk.year != current_year %}
+			{% unless forloop.first %}</ul>{% endunless %}
+			<h2>{{ talk.year }}</h2>
+			<ul>
+			{% assign current_year = talk.year %}
+		{% endif %}
+		<li>
+			<strong>{% if talk.url %}<a href="{{ talk.url }}">{{ talk.title }}</a>{% else %}{{ talk.title }}{% endif %}</strong>
+			<br>{{ talk.venue }}
+			<br><em>{{ talk.dates }}</em>
+			<br>{{ talk.role }}
+		</li>
+	{% endfor %}
+	</ul>
+
+	<!-- Embed PDF block -->
+	<embed src="/tech_poster.pdf" type="application/pdf" width="100%" height="600px" />
+
+</section>

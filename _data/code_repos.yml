@@ -1,0 +1,38 @@
+- name: "Cloudy-Maraston"
+  repo_url: "https://github.com/sophie-newman/cloudy-maraston"
+  github_repo: "sophie-newman/cloudy-maraston"
+  image: "https://github.com/sophie-newman/cloudy-maraston/raw/main/cloudy-maraston_transparent.png"
+  alt: "Cloudy-Maraston logo"
+  description: 'Jupyter notebooks reproducing all plots in <a href="https://doi.org/10.1093/mnras/staf1866">Newman et al. (2026, MNRAS)</a>. Uses Python and the <code>synthesizer</code> package to generate synthetic astrophysical observables from stellar population model grids.'
+  links:
+    - label: "Repository"
+      url: "https://github.com/sophie-newman/cloudy-maraston"
+      icon: "brands fa-github"
+    - label: "Paper"
+      url: "https://doi.org/10.1093/mnras/staf1866"
+
+- name: "microlensing-in-M31"
+  repo_url: "https://github.com/sophie-newman/microlensing-in-M31"
+  github_repo: "sophie-newman/microlensing-in-M31"
+  image: "/images/microlensing-banner.png"
+  alt: "microlensing-in-M31 banner"
+  description: 'Code and data to reproduce all results in <a href="https://arxiv.org/abs/2509.10674">Newman, Middleton &amp; McMaster (2025)</a>. Models microlensing by white dwarfs to resolve accretion flows in M31.'
+  links:
+    - label: "Repository"
+      url: "https://github.com/sophie-newman/microlensing-in-M31"
+      icon: "brands fa-github"
+    - label: "Paper"
+      url: "https://arxiv.org/abs/2509.10674"
+
+- name: "synthesizer"
+  repo_url: "https://synthesizer-project.github.io/"
+  github_repo: "flaresimulations/synthesizer"
+  image: "/images/synthesizer_logo.png"
+  alt: "synthesizer logo"
+  description: "A Python package for generating synthetic astrophysical observables from galaxy and black hole physics models. I have contributed code to this open-source project, including integration with the Cloudy-Maraston grids."
+  links:
+    - label: "Repository"
+      url: "https://github.com/flaresimulations/synthesizer"
+      icon: "brands fa-github"
+    - label: "Docs"
+      url: "https://synthesizer-project.github.io/"

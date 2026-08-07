@@ -1,0 +1,11 @@
+<nav id="nav">
+	<ul>
+		<li><a href="/"{% if page.nav_active == "about" %} class="active"{% endif %}>About</a></li>
+		<li><a href="/publications/"{% if page.nav_active == "publications" %} class="active"{% endif %}>Publications</a></li>
+		<li><a href="/projects/"{% if page.nav_active == "projects" %} class="active"{% endif %}>Projects</a></li>
+		<li><a href="/collaborations/"{% if page.nav_active == "collaborations" %} class="active"{% endif %}>Collaborations</a></li>
+		<li><a href="/meetings/"{% if page.nav_active == "meetings" %} class="active"{% endif %}>Meetings</a></li>
+		<li><a href="/outreach/"{% if page.nav_active == "outreach" %} class="active"{% endif %}>Outreach</a></li>
+		<li><a href="/codes/"{% if page.nav_active == "codes" %} class="active"{% endif %}>Codes</a></li>
+	</ul>
+</nav>

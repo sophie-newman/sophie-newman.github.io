@@ -1,205 +1,62 @@
-<!DOCTYPE HTML>
-<!--
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Sophie Newman</title>
-		<link rel="icon" href="favicon.ico" type="image/x-icon">
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
+---
+layout: default
+home: true
+header_alt: true
+header_title: Sophie Newman
+header_subtitle: PhD student generating synthetic observations for JWST
+nav_active: about
+---
 
-	<body class="is-preload">
+<section id="content" class="main">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+	<p> I am working towards a PhD at the Institute of Cosmology & Gravitation (ICG) at the University of Portsmouth,
+		learning how to generate synthetic observations for the James Webb Space Telescope (JWST).
+		I also have an interest in using microlensing by compact objects to explore accretion disks.
+	</p>
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<h1>Sophie Newman</h1>
-						<p>PhD student generating synthetic observations for JWST</p>
-					</header>
+	<p> I grew up in a single-parent family in Grays, Essex, a low-income area where physics education is particuarly poor. I became excited
+		about physics around the age of 15 after watching documentaries on space missions and eventually learned more
+		about astronomy and astrophysics too. In 2019 I started my MPhys degree in Physics at the University of
+		Southampton, graduating with 1st class honours in 2023. I then begun my PhD later that year at the Institute of
+		Cosmology & Gravitation at the University of Portsmouth with Claudia Maraston and Christopher Lovell as my supervisors. In September 2025 I begun working
+		at the Center for Computational Astrophysics (CCA) at the Flatiron Institute in New York City through their four-month Pre-Doctoral programme,
+		working with Rachel Somerville and Laura Sommovigo.
+	</p>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li><a href="#intro" class="active">About me</a></li>
-							<li><a href="#research">Research</a></li>
-							<li><a href="#publications">Publications</a></li>
-							<li><a href="#conferences">Meetings</a></li>
-							<li><a href="#outreach">Outreach</a></li>
-							<li><a href="#code">Code</a></li>
-						</ul>
-					</nav>
+	<p> When I am not busy coding, you can find me baking various sweet goods (IG: @physicistbakery), crocheting, doing various
+		other crafts, watching F1, enjoying nature, or hanging out with friends from my church family.
+	</p>
 
-				<!-- Main -->
-					<div id="main">
+	<img src="/images/collage.png" alt="Collage of Sophie Newman" style="width: 100%; height: auto; border-radius: 10px; margin-top: 1.5em; margin-bottom: 1.5em;" />
 
-						<!-- Introduction -->
-							<section id="intro" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>Hello!</h2>
-										</header>
-										<p>I am working towards a PhD at the Institute of Cosmology & Gravitation (ICG) at the
-										University of Portsmouth, learning how to generate synthetic observations for the James Webb
-										Space Telescope (JWST). I also have an interest in using microlensing by compact objects to explore
-										accretion disks.</p>
-										<ul class="actions">
-											<li><a href="/about/" class="button">More about me here</a></li>
-										</ul>
-									</div>
-									<span class="image"><img src="images/me_sombrero_small.jpg" alt="" /></span>
-								</div>
-							</section>
+	<h2>Education</h2>
+	<ul>
+		{% for item in site.data.education %}
+		<li style="margin-bottom: 1em;">
+			<strong>{{ item.institution }}</strong>, {{ item.location }}<br>
+			<em>{{ item.dates }}</em><br>
+			{{ item.detail }}
+		</li>
+		{% endfor %}
+	</ul>
 
-						<!-- Research Section -->
-							<section id="research" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>My research</h2>
-										</header>
-										<p>With the launch of the JWST an avalanche of data on the high redshift Universe
-											is currently being taken. For example, F. D'Eugenio et al. 2023 have observed the most
-											distant nebular-line detection to date at z = 12.5 with JWST/NIRSpec spectroscopy.
-											It is important therefore that we have the best theoretical models to understand this data,
-											and this is the focus of my research.
-											One way of comparing models with data is to forward model the emission from theoretical galaxies
-											and compare in this observer space.</p>
-										<ul class="actions">
-											<li><a href="/research/" class="button">More about my research here</a></li>
-										</ul>
-									</div>
-									<span class="image"><img src="images/el_gordo_square.png" alt="" /></span>
-								</div>
-							</section>
+	<h2>Research Experience</h2>
+	<ul>
+		{% for item in site.data.research_experience %}
+		<li style="margin-bottom: 1em;">
+			<strong>{{ item.institution }}</strong>, {{ item.location }}<br>
+			<em>{{ item.dates }}</em><br>
+			{{ item.detail }}
+		</li>
+		{% endfor %}
+	</ul>
 
+	<h2>Collaborations</h2>
+	<p>I am a member of the synthetic observations group within the <a href="https://learning-the-universe.org/"><em>Learning the Universe</em></a> collaboration. See my <a href="/collaborations/">collaborations</a> page for more.</p>
 
-						<!-- Publications Section -->
-							<section id="publications" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>Publications</h2>
-											<p>Below are my two first-author papers:</p>
-										</header>
+	<ul class="actions">
+		<li><a href="/publications/" class="button primary">View my publications</a></li>
+		<li><a href="/projects/" class="button">See my projects</a></li>
+	</ul>
 
-										<!-- First paper -->
-										<article class="publication" style="margin-bottom: 1em;">
-											<h3 style="margin-bottom: 0.3em;">Using white dwarf lensing to resolve accretion flows</h3>
-											<p style="margin: 0.2em 0;"><strong>Authors:</strong> Newman, Sophie L.; Middleton, Matthew J.; McMaster, Adam</p>
-											<p style="margin: 0.2em 0;"><strong>Year:</strong> 2025</p>
-											<p style="margin: 0.2em 0;"><strong>Link:</strong> <a href="https://arxiv.org/abs/2509.10674" target="_blank">arXiv:2509.10674</a></p>
-										</article>
-
-										<!-- Second paper -->
-										<article class="publication">
-											<h3 style="margin-bottom: 0.3em;">Cloudy-Maraston: Integrating nebular continuum and line emission with the Maraston stellar population synthesis models</h3>
-											<p style="margin: 0.2em 0;"><strong>Authors:</strong> Newman, Sophie L.; Lovell, Christopher C.; Maraston, Claudia; Roper, William J.; Vijayan, Aswin P.; Wilkins, Stephen M.; Giavalisco, Mauro; Saxena, Aayush</p>
-											<p style="margin: 0.2em 0;"><strong>Year:</strong> 2025</p>
-											<p style="margin: 0.2em 0;"><strong>Link:</strong> <a href="https://doi.org/10.1093/mnras/staf1866" target="_blank">doi:10.1093/mnras/staf1866</a></p>
-										</article>
-
-										<!-- Button to view all publications -->
-										<ul class="actions" style="margin-top: 2em;">
-											<li><a href="https://ui.adsabs.harvard.edu/search/q=orcid%3A0009-0001-3422-3048&sort=date%20desc" class="button">View all papers I have contributed to on AdS</a></li>
-										</ul>
-
-									</div>
-									<span class="image"><img src="images/microlensing_graphic.jpg" alt="" /></span>
-								</div>
-
-							</section>
-
-
-						<!-- Conferences Section -->
-							<section id="conferences" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>Meetings</h2>
-										</header>
-										<p>I enjoy attending meetings and conferences to learn about wider fields of research, as well to present my research
-											in an engaging and accessible manner.</p>
-										<ul class="actions">
-											<li><a href="/conferences/" class="button">Meetings I've attended</a></li>
-										</ul>
-									</div>
-									<span class="image"><img src="images/with_labels_cropped.png" alt="" /></span>
-								</div>
-							</section>
-
-						<!-- Outreach Section -->
-							<section id="outreach" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>Outreach</h2>
-										</header>
-										<p>I'm passionate about making science accessible to everyone by ensuring that all have the resources and opportunities they need to get involved. I love contributing wherever I can to help build a more inclusive scientific community.</p>
-										<ul class="actions">
-											<li><a href="/outreach/" class="button">See my outreach</a></li>
-										</ul>
-									</div>
-									<span class="image"><img src="images/me_jwst.jpg" alt="" /></span>
-								</div>
-							</section>
-
-						<!-- Code -->
-							<section id="code" class="main special">
-								<header class="major">
-									<h2>Code</h2>
-									<p>Here you can find descriptions of the codes that I have written and contributed to.</p>
-								</header>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="/code/" class="button primary">Learn more</a></li>
-									</ul>
-								</footer>
-							</section>
-
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<p>If you're interested in any of my research or outreach and would like to chat further, please do get in touch!</p>
-
-						</section>
-						<section>
-							<h2>Contact me</h2>
-							<dl class="alt">
-								<dt>Address</dt>
-								<dd>Dennis Sciama Building &bull; Portsmouth, PO1 3FX &bull; UK</dd>
-								<dt>Email</dt>
-								<dd><a href="mailto:sophie.newman@port.ac.uk">sophie.newman@port.ac.uk</a></dd>
-							</dl>
-							<ul class="icons">
-								<li><a href="https://twitter.com/sophiephys" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
-								<li><a href="https://github.com/sophie-newman" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-								<li><a href="https://bsky.app/profile/sophienewman.bsky.social" class="icon brands fa-bluesky alt"><span class="label">BlueSky</span></a></li>
-							</ul>
-						</section>
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</footer>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
-</html>
+</section>

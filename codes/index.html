@@ -1,0 +1,37 @@
+---
+layout: default
+title: Codes | Sophie Newman
+header_title: Codes
+nav_active: codes
+---
+
+<section id="content" class="main">
+
+	<p>Repositories of code I have written to accompany my research papers.</p>
+	<ul class="actions stacked">
+		<li><a href="https://github.com/sophie-newman" class="button primary icon brands fa-github">View all on GitHub</a></li>
+	</ul>
+
+	<ul class="features">
+		{% for repo in site.data.code_repos %}
+		<li style="display: flex; flex-direction: column;">
+			<img src="{{ repo.image }}" alt="{{ repo.alt }}" style="width: 100%; max-width: 220px; height: 120px; object-fit: contain; margin: 0 auto 1.5em; display: block;" />
+			<h3><a href="{{ repo.repo_url }}">{{ repo.name }}</a></h3>
+			{% if repo.github_repo %}
+			<p>
+				<img src="https://img.shields.io/github/stars/{{ repo.github_repo }}?style=flat-square" alt="GitHub stars" style="height: 20px; margin-right: 4px;" />
+				<img src="https://img.shields.io/github/forks/{{ repo.github_repo }}?style=flat-square" alt="GitHub forks" style="height: 20px; margin-right: 4px;" />
+				<img src="https://img.shields.io/github/last-commit/{{ repo.github_repo }}?style=flat-square" alt="Last commit" style="height: 20px;" />
+			</p>
+			{% endif %}
+			<p>{{ repo.description }}</p>
+			<ul class="actions stacked" style="margin-top: auto;">
+				{% for link in repo.links %}
+				<li><a href="{{ link.url }}" class="button small{% if link.icon %} icon {{ link.icon }}{% endif %}">{{ link.label }}</a></li>
+				{% endfor %}
+			</ul>
+		</li>
+		{% endfor %}
+	</ul>
+
+</section>

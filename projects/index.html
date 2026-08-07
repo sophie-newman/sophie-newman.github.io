@@ -1,0 +1,36 @@
+---
+layout: default
+title: Projects | Sophie Newman
+header_title: Projects
+nav_active: projects
+---
+
+<section id="content" class="main">
+
+	{% for project in site.data.projects %}
+	<article class="project" style="margin-bottom: 2.5em;">
+		<h2>{{ project.title }}</h2>
+
+		{{ project.description_html }}
+
+		{% if project.websites %}
+		<h3>Websites</h3>
+		<ul class="actions">
+			{% for site_link in project.websites %}
+			<li><a href="{{ site_link.url }}" class="button">{{ site_link.label }}</a></li>
+			{% endfor %}
+		</ul>
+		{% endif %}
+
+		{% if project.papers %}
+		<h3>Relevant Papers</h3>
+		<ul>
+			{% for paper in project.papers %}
+			<li><a href="{{ paper.url }}">{{ paper.label }}</a></li>
+			{% endfor %}
+		</ul>
+		{% endif %}
+	</article>
+	{% endfor %}
+
+</section>

@@ -1,0 +1,13 @@
+- name: "Learning the Universe"
+  tagline: "A Simons Collaboration developing forward models to connect galaxy formation simulations with observations"
+  description_html: |
+    <p>I am a member of the synthetic observations group within the <a href="https://learning-the-universe.org/">Learning the Universe</a>
+    collaboration, developing methods to generate synthetic astrophysical observables from hydrodynamical simulations and
+    semi-analytic models of galaxy formation.</p>
+  websites:
+    - label: "Learning the Universe"
+      url: "https://learning-the-universe.org/"
+  papers:
+    - label: "Newman et al., in preparation"
+    - label: "Harvey et al. 2026, MNRAS"
+      url: "https://ui.adsabs.harvard.edu/abs/2026MNRAS.547ag282H/abstract"

@@ -1,0 +1,11 @@
+title: Sophie Newman
+description: PhD student generating synthetic observations for JWST
+url: "https://sophie-newman.github.io"
+
+# Markdown/plugins kept minimal: pages here are plain HTML with front matter,
+# Jekyll only supplies layouts/includes/data (GitHub Pages builds this with no extra setup).
+plugins: []
+
+exclude:
+  - README.md
+  - template_readme.txt

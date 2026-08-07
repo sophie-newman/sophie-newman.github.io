@@ -1,0 +1,24 @@
+---
+layout: default
+title: Publications | Sophie Newman
+header_title: Publications
+nav_active: publications
+---
+
+<section id="content" class="main">
+
+	<p>Below is my most recent first-author paper. For a complete, up-to-date list of everything I've contributed to, see my ADS library.</p>
+
+	<ul class="actions">
+		<li><a href="https://ui.adsabs.harvard.edu/search/q=orcid%3A0009-0001-3422-3048&sort=date%20desc" class="button primary">View my full publication list on ADS</a></li>
+	</ul>
+
+	<article class="publication" style="margin-top: 2em;">
+		<h3 style="margin-bottom: 0.3em;">{{ site.data.recent_publication.title }}</h3>
+		<p style="margin: 0.2em 0;"><strong>Authors:</strong> {{ site.data.recent_publication.authors_html }}</p>
+		<p style="margin: 0.2em 0;"><strong>Journal:</strong> {{ site.data.recent_publication.journal }}</p>
+		<p style="margin: 0.2em 0;"><strong>Year:</strong> {{ site.data.recent_publication.year }}</p>
+		<p style="margin: 0.2em 0;"><strong>Link:</strong> <a href="{{ site.data.recent_publication.url }}" target="_blank">{{ site.data.recent_publication.link_label }}</a></p>
+	</article>
+
+</section>
