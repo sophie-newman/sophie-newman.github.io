@@ -1,0 +1,14 @@
+- name: about
+  url: /
+- name: publications
+  url: /publications/
+- name: projects
+  url: /projects/
+- name: collaborations
+  url: /collaborations/
+- name: meetings
+  url: /meetings/
+- name: outreach
+  url: /outreach/
+- name: codes
+  url: /codes/

@@ -1,22 +1,23 @@
 ---
 layout: default
 title: Outreach | Sophie Newman
-header_title: Outreach
+header_title: outreach
+header_subtitle: Making science accessible to everyone.
 nav_active: outreach
 ---
 
-<section id="content" class="main">
+<p>I'm passionate about making science accessible to everyone by ensuring that all have the resources and opportunities they need to get involved. Here are some of my favourite outreach initiatives I've taken part in.</p>
 
-	<p>I'm passionate about making science accessible to everyone by ensuring that all have the resources and opportunities they need to get involved. Here are some of my favourite outreach initiatives I've taken part in.</p>
-
-	<ul class="features">
+<div class="projects">
+	<ul class="grid">
 		{% for item in site.data.outreach %}
-		<li>
-			{% if item.image %}<img src="{{ item.image }}" alt="{{ item.alt }}" style="width: 100%; max-width: 160px; margin: 0 auto 1.5em; display: block;" />{% endif %}
-			<h3>{{ item.title }}</h3>
-			<p>{{ item.description }}</p>
+		<li class="card">
+			{% if item.image %}<img class="card-img" src="{{ item.image }}" alt="{{ item.alt }}" />{% endif %}
+			<div class="card-body">
+				<h3 class="card-title">{{ item.title }}</h3>
+				<p class="card-text">{{ item.description }}</p>
+			</div>
 		</li>
 		{% endfor %}
 	</ul>
-
-</section>
+</div>

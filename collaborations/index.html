@@ -1,37 +1,32 @@
 ---
 layout: default
 title: Collaborations | Sophie Newman
-header_title: Collaborations
+header_title: collaborations
+header_subtitle: Groups and consortia I am part of.
 nav_active: collaborations
 ---
 
-<section id="content" class="main">
+{% for collab in site.data.collaborations %}
+<h2 class="category">{{ collab.name }}</h2>
 
-	{% for collab in site.data.collaborations %}
-	<article class="collaboration" style="margin-bottom: 2.5em;">
-		<h2>{{ collab.name }}</h2>
-		{% if collab.tagline %}<p><em>{{ collab.tagline }}</em></p>{% endif %}
+{% if collab.tagline %}<p class="post-description">{{ collab.tagline }}</p>{% endif %}
 
-		{{ collab.description_html }}
+{{ collab.description_html }}
 
-		{% if collab.websites %}
-		<h3>Websites</h3>
-		<ul class="actions">
-			{% for site_link in collab.websites %}
-			<li><a href="{{ site_link.url }}" class="button">{{ site_link.label }}</a></li>
-			{% endfor %}
-		</ul>
-		{% endif %}
-
-		{% if collab.papers %}
-		<h3>Relevant Papers</h3>
-		<ul>
-			{% for paper in collab.papers %}
-			<li>{% if paper.url %}<a href="{{ paper.url }}">{{ paper.label }}</a>{% else %}{{ paper.label }}{% endif %}</li>
-			{% endfor %}
-		</ul>
-		{% endif %}
-	</article>
+{% if collab.websites %}
+<p>
+	{% for site_link in collab.websites %}
+	<a href="{{ site_link.url }}" class="btn">{{ site_link.label }}</a>
 	{% endfor %}
+</p>
+{% endif %}
 
-</section>
+{% if collab.papers %}
+<h3>Relevant papers</h3>
+<ul>
+	{% for paper in collab.papers %}
+	<li>{% if paper.url %}<a href="{{ paper.url }}">{{ paper.label }}</a>{% else %}{{ paper.label }}{% endif %}</li>
+	{% endfor %}
+</ul>
+{% endif %}
+{% endfor %}

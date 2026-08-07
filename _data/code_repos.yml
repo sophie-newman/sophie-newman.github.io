@@ -7,7 +7,7 @@
   links:
     - label: "Repository"
       url: "https://github.com/sophie-newman/cloudy-maraston"
-      icon: "brands fa-github"
+      icon: "fab fa-github"
     - label: "Paper"
       url: "https://doi.org/10.1093/mnras/staf1866"
 
@@ -20,7 +20,7 @@
   links:
     - label: "Repository"
       url: "https://github.com/sophie-newman/microlensing-in-M31"
-      icon: "brands fa-github"
+      icon: "fab fa-github"
     - label: "Paper"
       url: "https://arxiv.org/abs/2509.10674"
 
@@ -33,6 +33,6 @@
   links:
     - label: "Repository"
       url: "https://github.com/flaresimulations/synthesizer"
-      icon: "brands fa-github"
+      icon: "fab fa-github"
     - label: "Docs"
       url: "https://synthesizer-project.github.io/"

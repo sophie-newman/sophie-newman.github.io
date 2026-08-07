@@ -1,15 +1,23 @@
 ---
 layout: default
 home: true
-header_alt: true
 header_title: Sophie Newman
 header_subtitle: PhD student generating synthetic observations for JWST
 nav_active: about
 ---
 
-<section id="content" class="main">
+<div class="profile float-right">
+	<img class="rounded-circle" src="/images/face_circle.png" alt="Sophie Newman" />
+	<div class="more-info">
+		<p>Institute of Cosmology &amp; Gravitation</p>
+		<p>Dennis Sciama Building</p>
+		<p>Portsmouth, PO1 3FX, UK</p>
+	</div>
+</div>
 
-	<p> I am working towards a PhD at the Institute of Cosmology & Gravitation (ICG) at the University of Portsmouth,
+<div class="clearfix">
+
+	<p> I am working towards a PhD at the Institute of Cosmology &amp; Gravitation (ICG) at the University of Portsmouth,
 		learning how to generate synthetic observations for the James Webb Space Telescope (JWST).
 		I also have an interest in using microlensing by compact objects to explore accretion disks.
 	</p>
@@ -18,7 +26,7 @@ nav_active: about
 		about physics around the age of 15 after watching documentaries on space missions and eventually learned more
 		about astronomy and astrophysics too. In 2019 I started my MPhys degree in Physics at the University of
 		Southampton, graduating with 1st class honours in 2023. I then begun my PhD later that year at the Institute of
-		Cosmology & Gravitation at the University of Portsmouth with Claudia Maraston and Christopher Lovell as my supervisors. In September 2025 I begun working
+		Cosmology &amp; Gravitation at the University of Portsmouth with Claudia Maraston and Christopher Lovell as my supervisors. In September 2025 I begun working
 		at the Center for Computational Astrophysics (CCA) at the Flatiron Institute in New York City through their four-month Pre-Doctoral programme,
 		working with Rachel Somerville and Laura Sommovigo.
 	</p>
@@ -27,36 +35,43 @@ nav_active: about
 		other crafts, watching F1, enjoying nature, or hanging out with friends from my church family.
 	</p>
 
-	<img src="/images/collage.png" alt="Collage of Sophie Newman" style="width: 100%; height: auto; border-radius: 10px; margin-top: 1.5em; margin-bottom: 1.5em;" />
+</div>
 
-	<h2>Education</h2>
-	<ul>
-		{% for item in site.data.education %}
-		<li style="margin-bottom: 1em;">
-			<strong>{{ item.institution }}</strong>, {{ item.location }}<br>
-			<em>{{ item.dates }}</em><br>
-			{{ item.detail }}
-		</li>
-		{% endfor %}
-	</ul>
+<img src="/images/collage.png" alt="Collage of Sophie Newman" style="width: 100%; border-radius: 4px; margin: 1.5rem 0;" />
 
-	<h2>Research Experience</h2>
-	<ul>
-		{% for item in site.data.research_experience %}
-		<li style="margin-bottom: 1em;">
-			<strong>{{ item.institution }}</strong>, {{ item.location }}<br>
-			<em>{{ item.dates }}</em><br>
-			{{ item.detail }}
-		</li>
-		{% endfor %}
-	</ul>
+<h2 class="category">education</h2>
+<ul class="entry-list">
+	{% for item in site.data.education %}
+	<li>
+		<div class="entry-title">{{ item.institution }}, {{ item.location }}</div>
+		<div class="entry-meta">{{ item.dates }}</div>
+		{{ item.detail }}
+	</li>
+	{% endfor %}
+</ul>
 
-	<h2>Collaborations</h2>
-	<p>I am a member of the synthetic observations group within the <a href="https://learning-the-universe.org/"><em>Learning the Universe</em></a> collaboration. See my <a href="/collaborations/">collaborations</a> page for more.</p>
+<h2 class="category">research experience</h2>
+<ul class="entry-list">
+	{% for item in site.data.research_experience %}
+	<li>
+		<div class="entry-title">{{ item.institution }}, {{ item.location }}</div>
+		<div class="entry-meta">{{ item.dates }}</div>
+		{{ item.detail }}
+	</li>
+	{% endfor %}
+</ul>
 
-	<ul class="actions">
-		<li><a href="/publications/" class="button primary">View my publications</a></li>
-		<li><a href="/projects/" class="button">See my projects</a></li>
-	</ul>
+<h2 class="category">collaborations</h2>
+<p>I am a member of the synthetic observations group within the <a href="https://learning-the-universe.org/"><em>Learning the Universe</em></a> collaboration. See my <a href="/collaborations/">collaborations</a> page for more.</p>
 
-</section>
+<p>
+	<a href="/publications/" class="btn btn-primary">View my publications</a>
+	<a href="/projects/" class="btn">See my projects</a>
+</p>
+
+<div class="social">
+	<div class="contact-icons">{% include social.html %}</div>
+	<div class="contact-note">
+		If you're interested in any of my research or outreach and would like to chat further, please do get in touch!
+	</div>
+</div>
