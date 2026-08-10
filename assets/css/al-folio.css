@@ -435,8 +435,10 @@ body > header {
 
 /* Profile picture on the about page */
 .profile {
-  width: 100%;
-  margin-bottom: 1rem;
+  /* Keep the portrait modest on narrow screens, and centred above the text. */
+  width: 55%;
+  max-width: 220px;
+  margin: 0 auto 1rem;
 }
 
 .profile img {
@@ -468,6 +470,8 @@ body > header {
 @media (min-width: 576px) {
   .profile {
     width: 30%;
+    max-width: none;
+    margin: 0 0 1rem;
   }
 
   .profile.float-right {
