@@ -7,7 +7,8 @@
 #                 (list every author instead if the paper has three or fewer)
 #   more_authors  true if the paper has more authors than the ones listed above
 #   journal       journal name as it should read in the citation
-#   abbr          short journal name for the badge
+#   year          year of publication, shown in the badge (for a paper that is
+#                 not published yet, the year it went on arXiv)
 #   volume/pages  volume and page/article id, e.g. "545" / "staf1866"
 #   doi           DOI, omit for papers that are not published yet
 #   arxiv         arXiv id, e.g. "2501.03133"
@@ -15,7 +16,7 @@
 #                 "Submitted to MNRAS." Leave out and it just says "Submitted."
 #
 # Author rendering is handled by _includes/publication_list.html: if
-# "Sophie L. Newman" is one of the listed authors the line ends "& authors",
+# "Sophie L. Newman" is one of the listed authors the line ends "& others",
 # otherwise it ends "& others including Sophie L. Newman".
 
 first_author:
@@ -26,7 +27,7 @@ first_author:
       - Claudia Maraston
     more_authors: true
     journal: MNRAS
-    abbr: MNRAS
+    year: "2025"
     volume: "545"
     pages: "staf1866"
     doi: "10.1093/mnras/staf1866"
@@ -37,7 +38,7 @@ first_author:
       - Sophie L. Newman
       - Matthew J. Middleton
       - Adam McMaster
-    abbr: arXiv
+    year: "2025"
     arxiv: "2509.10674"
     # submitted_to: MNRAS
 
@@ -49,7 +50,7 @@ major_contributor:
       - Sophie L. Newman
     more_authors: true
     journal: MNRAS
-    abbr: MNRAS
+    year: "2026"
     volume: "547"
     pages: "stag282"
     doi: "10.1093/mnras/stag282"
@@ -62,7 +63,7 @@ major_contributor:
       - Aswin P. Vijayan
     more_authors: true
     journal: MNRAS
-    abbr: MNRAS
+    year: "2026"
     volume: "546"
     pages: "stag214"
     doi: "10.1093/mnras/stag214"
@@ -75,7 +76,7 @@ major_contributor:
       - Aswin Vijayan
     more_authors: true
     journal: The Journal of Open Source Software
-    abbr: JOSS
+    year: "2026"
     volume: "11"
     pages: "9436"
     doi: "10.21105/joss.09436"
@@ -88,7 +89,7 @@ major_contributor:
       - Aswin P. Vijayan
     more_authors: true
     journal: The Open Journal of Astrophysics
-    abbr: OJAp
+    year: "2025"
     volume: "8"
     pages: "152"
     doi: "10.33232/001c.145766"
@@ -102,7 +103,7 @@ co_author:
       - Akram Hasani Zonoozi
     more_authors: true
     journal: MNRAS
-    abbr: MNRAS
+    year: "2026"
     volume: "548"
     pages: "stag337"
     doi: "10.1093/mnras/stag337"
@@ -115,7 +116,7 @@ co_author:
       - Yuichi Harikane
     more_authors: true
     journal: ApJ
-    abbr: ApJ
+    year: "2025"
     volume: "995"
     pages: "21"
     doi: "10.3847/1538-4357/ae145f"
@@ -127,7 +128,7 @@ co_author:
       - Thomas Harvey
       - Christopher J. Conselice
     more_authors: true
-    abbr: arXiv
+    year: "2025"
     arxiv: "2512.10839"
     # submitted_to: MNRAS
 
@@ -138,7 +139,7 @@ co_author:
       - Maxwell G. A. Maltz
     more_authors: true
     journal: MNRAS
-    abbr: MNRAS
+    year: "2025"
     volume: "543"
     pages: "3055"
     doi: "10.1093/mnras/staf1642"
@@ -151,7 +152,7 @@ co_author:
       - Quihan He
     more_authors: true
     journal: MNRAS
-    abbr: MNRAS
+    year: "2025"
     volume: "544"
     pages: "782"
     doi: "10.1093/mnras/staf1678"
@@ -163,7 +164,7 @@ co_author:
       - Caitlin M. Casey
       - Hollis B. Akins
     more_authors: true
-    abbr: arXiv
+    year: "2025"
     arxiv: "2508.04791"
     # submitted_to: ApJ
 
@@ -174,7 +175,7 @@ co_author:
       - Dimitrios Irodotou
     more_authors: true
     journal: The Open Journal of Astrophysics
-    abbr: OJAp
+    year: "2025"
     volume: "8"
     pages: "29"
     doi: "10.33232/001c.132374"

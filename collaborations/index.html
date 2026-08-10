@@ -13,14 +13,6 @@ nav_active: collaborations
 
 {{ collab.description_html }}
 
-{% if collab.websites %}
-<p>
-	{% for site_link in collab.websites %}
-	<a href="{{ site_link.url }}" class="btn">{{ site_link.label }}</a>
-	{% endfor %}
-</p>
-{% endif %}
-
 {% if collab.papers %}
 <h3>Relevant papers</h3>
 <ul>

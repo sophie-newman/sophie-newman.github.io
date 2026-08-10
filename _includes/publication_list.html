@@ -4,17 +4,19 @@
 	Usage: {% include publication_list.html items=site.data.publications.first_author %}
 
 	Author line: the first three authors (or all of them, if there are three or
-	fewer), then "& authors" when I'm one of them, or "& others including
-	Sophie L. Newman" when I'm not.
+	fewer), then "& others" when I'm one of them, or "& others including
+	Sophie L. Newman" when I'm not. Any spelling of my own name is picked out
+	with <span class="me">.
 {% endcomment %}
 {% assign me = "Sophie L. Newman" %}
+{% assign my_names = "Sophie L. Newman|Sophie Newman" | split: "|" %}
 <ol class="bibliography">
 	{% for pub in include.items %}
 	<li>
-		<div class="abbr"><abbr>{{ pub.abbr }}</abbr></div>
+		<div class="abbr"><abbr>{{ pub.year }}</abbr></div>
 		<div class="title">{{ pub.title }}</div>
 		<div class="citation">
-			{% capture authors %}{% for a in pub.authors %}{% unless forloop.first %}{% if forloop.last and pub.more_authors != true %} &amp; {% else %}, {% endif %}{% endunless %}{% if a == me %}<span class="me">{{ a }}</span>{% else %}{{ a }}{% endif %}{% endfor %}{% if pub.more_authors %}{% if pub.authors contains me %} &amp; authors{% else %} &amp; others including <span class="me">{{ me }}</span>{% endif %}{% endif %}{% endcapture %}{{ authors }},
+			{% capture authors %}{% for a in pub.authors %}{% unless forloop.first %}{% if forloop.last and pub.more_authors != true %} &amp; {% else %}, {% endif %}{% endunless %}{% if my_names contains a %}<span class="me">{{ a }}</span>{% else %}{{ a }}{% endif %}{% endfor %}{% if pub.more_authors %}{% assign mine = false %}{% for a in pub.authors %}{% if my_names contains a %}{% assign mine = true %}{% endif %}{% endfor %}{% if mine %} &amp; others{% else %} &amp; others including <span class="me">{{ me }}</span>{% endif %}{% endif %}{% endcapture %}{{ authors }},
 			{% if pub.doi %}{{ pub.journal }}, {{ pub.volume }} {{ pub.pages }}.{% else %}Submitted{% if pub.submitted_to %} to {{ pub.submitted_to }}{% endif %}.{% endif %}
 			<a href="https://arxiv.org/abs/{{ pub.arxiv }}" target="_blank" rel="noopener">arXiv:{{ pub.arxiv }}</a>
 		</div>
