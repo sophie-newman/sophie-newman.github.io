@@ -27,7 +27,7 @@ first_author:
       - Claudia Maraston
     more_authors: true
     journal: MNRAS
-    year: "2025"
+    year: "2026"
     volume: "545"
     pages: "staf1866"
     doi: "10.1093/mnras/staf1866"
@@ -43,6 +43,16 @@ first_author:
     # submitted_to: MNRAS
 
 major_contributor:
+  - title: "Stellar photoionisation modelling in SYNTHESIZER"
+    authors:
+      - Aswin P. Vijayan
+      - Stephen M. Wilkins
+      - Sophie L. Newman
+    more_authors: true
+    year: "2026"
+    arxiv: "2607.27467"
+    # submitted_to: MNRAS
+
   - title: "Flexible simulation-based inference for galaxy photometric fitting with synthesizer"
     authors:
       - Thomas Harvey
