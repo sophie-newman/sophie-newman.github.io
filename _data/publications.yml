@@ -51,7 +51,7 @@ major_contributor:
     more_authors: true
     year: "2026"
     arxiv: "2607.27467"
-    # submitted_to: MNRAS
+    submitted_to: OJA
 
   - title: "Flexible simulation-based inference for galaxy photometric fitting with synthesizer"
     authors:
@@ -140,7 +140,7 @@ co_author:
     more_authors: true
     year: "2025"
     arxiv: "2512.10839"
-    # submitted_to: MNRAS
+    submitted_to: ApJ
 
   - title: "First light and reionization epoch simulations (FLARES) – XIX. Supermassive black hole mergers in the early Universe and their environmental dependence"
     authors:
@@ -176,7 +176,7 @@ co_author:
     more_authors: true
     year: "2025"
     arxiv: "2508.04791"
-    # submitted_to: ApJ
+    submitted_to: AAS
 
   - title: "First Light and Reionization Epoch Simulations (FLARES) – XV: The physical properties of super-massive black holes and their impact on galaxies in the early universe"
     authors:
