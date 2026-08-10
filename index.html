@@ -18,56 +18,28 @@ nav_active: about
 <div class="clearfix">
 
 	<p> I am working towards a PhD at the Institute of Cosmology &amp; Gravitation (ICG) at the University of Portsmouth,
-		learning how to generate synthetic observations for the James Webb Space Telescope (JWST).
-		I also have an interest in using microlensing by compact objects to explore accretion disks.
+		generating synthetic observations of galaxies and AGN from major hydrodynamical simulations and semi-analytic models 
+		in order to better interpret observations from telescopes such as the James Webb Space Telescope (JWST). 
 	</p>
 
-	<p> I grew up in a single-parent family in Grays, Essex, a low-income area where physics education is particuarly poor. I became excited
-		about physics around the age of 15 after watching documentaries on space missions and eventually learned more
-		about astronomy and astrophysics too. In 2019 I started my MPhys degree in Physics at the University of
-		Southampton, graduating with 1st class honours in 2023. I then begun my PhD later that year at the Institute of
-		Cosmology &amp; Gravitation at the University of Portsmouth with Claudia Maraston and Christopher Lovell as my supervisors. In September 2025 I begun working
-		at the Center for Computational Astrophysics (CCA) at the Flatiron Institute in New York City through their four-month Pre-Doctoral programme,
-		working with Rachel Somerville and Laura Sommovigo.
+	<p> I grew up in a single-parent family in Grays, Essex, a low-income area with limited access to quality education. 
+		My interest in physics began around the age of 15, when I became fascinated by documentaries about space missions. 
+		This sparked a lasting interest in astronomy and astrophysics and ultimately motivated me to pursue physics at university. 
+		In 2019, I began my MPhys degree in Physics at the University of
+		Southampton, graduating with First-Class honours in 2023. Later that year,I began my PhD at the Institute of
+		Cosmology &amp; Gravitation at the University of Portsmouth, under the supervision of Christopher Lovell, Thomas Collett and Laura Nuttall. 
+		In September 2025, I joined the Center for Computational Astrophysics (CCA) at the Flatiron Institute in New York City 
+		through its Pre-Doctoral programme, working with Rachel Somerville and Laura Sommovigo. 
 	</p>
 
-	<p> When I am not busy coding, you can find me baking various sweet goods (IG: @physicistbakery), crocheting, doing various
-		other crafts, watching F1, enjoying nature, or hanging out with friends from my church family.
+	<p> When I am not busy coding, you can find me making wedding cakes (IG: @physicistbakery), learning too many kinds of crafts,
+		reading fantasy books, enjoying nature, or hanging out with friends from my church family.
 	</p>
 
 </div>
 
 <img src="/images/collage.png" alt="Collage of Sophie Newman" style="width: 100%; border-radius: 4px; margin: 1.5rem 0;" />
 
-<h2 class="category">education</h2>
-<ul class="entry-list">
-	{% for item in site.data.education %}
-	<li>
-		<div class="entry-title">{{ item.institution }}, {{ item.location }}</div>
-		<div class="entry-meta">{{ item.dates }}</div>
-		{{ item.detail }}
-	</li>
-	{% endfor %}
-</ul>
-
-<h2 class="category">research experience</h2>
-<ul class="entry-list">
-	{% for item in site.data.research_experience %}
-	<li>
-		<div class="entry-title">{{ item.institution }}, {{ item.location }}</div>
-		<div class="entry-meta">{{ item.dates }}</div>
-		{{ item.detail }}
-	</li>
-	{% endfor %}
-</ul>
-
-<h2 class="category">collaborations</h2>
-<p>I am a member of the synthetic observations group within the <a href="https://learning-the-universe.org/"><em>Learning the Universe</em></a> collaboration. See my <a href="/collaborations/">collaborations</a> page for more.</p>
-
-<p>
-	<a href="/publications/" class="btn btn-primary">View my publications</a>
-	<a href="/projects/" class="btn">See my projects</a>
-</p>
 
 <div class="social">
 	<div class="contact-icons">{% include social.html %}</div>

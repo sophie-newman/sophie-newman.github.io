@@ -2,27 +2,23 @@
 layout: default
 title: Publications | Sophie Newman
 header_title: publications
-header_subtitle: Most recent first-author paper; the full list lives on ADS.
+header_subtitle: Grouped by my role on the paper, most recent first.
 nav_active: publications
 ---
 
-<p>Below is my most recent first-author paper. For a complete, up-to-date list of everything I've contributed to, see my ADS library.</p>
+<p>Below are my papers, grouped by the role I played on them and listed most recent first. For a complete, up-to-date list, see my ADS library.</p>
 
 <p>
 	<a href="https://ui.adsabs.harvard.edu/search/q=orcid%3A0009-0001-3422-3048&sort=date%20desc" class="btn btn-primary">View my full publication list on ADS</a>
 </p>
 
 <div class="publications">
-	<h2 class="bibliography">{{ site.data.recent_publication.year }}</h2>
-	<ol class="bibliography">
-		<li>
-			<div class="abbr"><abbr>{{ site.data.recent_publication.journal }}</abbr></div>
-			<div class="title">{{ site.data.recent_publication.title }}</div>
-			<div class="author">{{ site.data.recent_publication.authors_html }}</div>
-			<div class="periodical">{{ site.data.recent_publication.journal }}, {{ site.data.recent_publication.year }}</div>
-			<div class="links">
-				<a href="{{ site.data.recent_publication.url }}" class="btn" target="_blank" rel="noopener">{{ site.data.recent_publication.link_label }}</a>
-			</div>
-		</li>
-	</ol>
+	<h2 class="bibliography">first author</h2>
+	{% include publication_list.html items=site.data.publications.first_author %}
+
+	<h2 class="bibliography">major contributor</h2>
+	{% include publication_list.html items=site.data.publications.major_contributor %}
+
+	<h2 class="bibliography">co-author</h2>
+	{% include publication_list.html items=site.data.publications.co_author %}
 </div>

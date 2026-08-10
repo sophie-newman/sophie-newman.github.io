@@ -14,23 +14,26 @@
   description: 'Engaged with the public at <a href="https://stephenwilkins.co.uk/jwsts-first-years"><em>JWST''s First Years of Discovery</em></a> during the 2024 Royal Society Summer Science Exhibition, showcasing the latest science from the James Webb Space Telescope.'
 
 - image: "/images/jwst_craft.jpg"
-  alt: "Build a Mini JWST craft"
+  alt: "Mini handmade JWST"
   title: "Build a Mini JWST"
-  description: 'Designed a hands-on "Build a Mini JWST" craft activity to bring the excitement of space science to all ages. The activity has been featured at Portsmouth Stargazing, Portsmouth Comic Con, and the Festival of Speed at Goodwood.'
+  description: 'Designed a hands-on "Build a Mini JWST" craft activity to bring the excitement of space science to all ages. The activity has been featured at Portsmouth Stargazing and Portsmouth Comic Con.'
 
 - image: "/images/aot-nyc.jpg"
   alt: "Astronomy on Tap NYC"
   title: "Astronomy on Tap NYC"
   description: 'Delivered a public talk at <a href="https://www.instagram.com/p/DQE4HbEjtur/?hl=en"><em>Astronomy on Tap NYC</em></a>, bringing accessible astronomy to a general audience in an informal setting.'
 
-- title: "Festival of Speed: Return to the Moon"
-  description: 'Exhibit volunteer for <a href="https://www.forbes.com/sites/bernardmarr/2026/07/10/inside-goodwoods-future-lab-where-tomorrows-technologies-become-tangible/"><em>Return to the Moon</em></a> at the Festival of Speed, Goodwood, 2026.'
+- image: "/images/fos.jpg"
+  alt: "Team members of the FOS exhibit at the Goodwood Festival of Speed"
+  title: "Goodwood Festival of Speed"
+  description: 'Exhibit volunteer for <em>Euclid</em> in 2025 and <a href="https://www.forbes.com/sites/bernardmarr/2026/07/10/inside-goodwoods-future-lab-where-tomorrows-technologies-become-tangible/"><em>Return to the Moon</em></a> in 2026.'
 
-- title: "Pint of Science, Portsmouth"
+- image: "/images/pint_of_science_logo.png"
+  alt: "Pint of Science logo"
+  title: "Pint of Science"
   description: 'Delivered a public talk for <em>Pint of Science</em> in Portsmouth, 2025.'
 
-- title: "Festival of Speed: Euclid"
-  description: 'Exhibit volunteer for <em>Euclid</em> at the Festival of Speed, Goodwood, 2025.'
-
-- title: "Discover Astrophysics"
+- image: "/images/uop_logo.avif"
+  alt: "University of Portsmouth logo"
+  title: "Discover Astrophysics"
   description: 'Speaker and panelist for the Year 10 <em>Discover Astrophysics</em> events at the University of Portsmouth, 2023&ndash;2026.'

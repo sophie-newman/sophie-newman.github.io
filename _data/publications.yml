@@ -1,0 +1,181 @@
+# Publications, grouped by the role I played on the paper. Within each group
+# the most recent paper goes at the TOP -- add new entries there.
+#
+# Fields (all taken straight from the ADS BibTeX export):
+#   title         paper title, plain text
+#   authors       the first three authors, "Given Family", in ADS order
+#                 (list every author instead if the paper has three or fewer)
+#   more_authors  true if the paper has more authors than the ones listed above
+#   journal       journal name as it should read in the citation
+#   abbr          short journal name for the badge
+#   volume/pages  volume and page/article id, e.g. "545" / "staf1866"
+#   doi           DOI, omit for papers that are not published yet
+#   arxiv         arXiv id, e.g. "2501.03133"
+#   submitted_to  journal a not-yet-published paper is submitted to; renders as
+#                 "Submitted to MNRAS." Leave out and it just says "Submitted."
+#
+# Author rendering is handled by _includes/publication_list.html: if
+# "Sophie L. Newman" is one of the listed authors the line ends "& authors",
+# otherwise it ends "& others including Sophie L. Newman".
+
+first_author:
+  - title: "Cloudy-Maraston: integrating nebular continuum and line emission with the Maraston stellar population synthesis models"
+    authors:
+      - Sophie L. Newman
+      - Christopher C. Lovell
+      - Claudia Maraston
+    more_authors: true
+    journal: MNRAS
+    abbr: MNRAS
+    volume: "545"
+    pages: "staf1866"
+    doi: "10.1093/mnras/staf1866"
+    arxiv: "2501.03133"
+
+  - title: "Using white dwarf lensing to resolve accretion flows"
+    authors:
+      - Sophie L. Newman
+      - Matthew J. Middleton
+      - Adam McMaster
+    abbr: arXiv
+    arxiv: "2509.10674"
+    # submitted_to: MNRAS
+
+major_contributor:
+  - title: "Flexible simulation-based inference for galaxy photometric fitting with synthesizer"
+    authors:
+      - Thomas Harvey
+      - Christopher C. Lovell
+      - Sophie L. Newman
+    more_authors: true
+    journal: MNRAS
+    abbr: MNRAS
+    volume: "547"
+    pages: "stag282"
+    doi: "10.1093/mnras/stag282"
+    arxiv: "2511.10640"
+
+  - title: "The nature of high-redshift massive quiescent galaxies – searching for RUBIES-UDS-QG-z7 in FLARES"
+    authors:
+      - Jack C. Turner
+      - Will J. Roper
+      - Aswin P. Vijayan
+    more_authors: true
+    journal: MNRAS
+    abbr: MNRAS
+    volume: "546"
+    pages: "stag214"
+    doi: "10.1093/mnras/stag214"
+    arxiv: "2509.16111"
+
+  - title: "Synthesizer: Synthetic Observables for Modern Astronomy"
+    authors:
+      - Will Roper
+      - Christopher Lovell
+      - Aswin Vijayan
+    more_authors: true
+    journal: The Journal of Open Source Software
+    abbr: JOSS
+    volume: "11"
+    pages: "9436"
+    doi: "10.21105/joss.09436"
+    arxiv: "2506.15811"
+
+  - title: "Synthesizer: a Software Package for Synthetic Astronomical Observables"
+    authors:
+      - Christopher C. Lovell
+      - William J. Roper
+      - Aswin P. Vijayan
+    more_authors: true
+    journal: The Open Journal of Astrophysics
+    abbr: OJAp
+    volume: "8"
+    pages: "152"
+    doi: "10.33232/001c.145766"
+    arxiv: "2508.03888"
+
+co_author:
+  - title: "COSMOS-Web: estimating physical parameters of galaxies using Self-Organizing Maps"
+    authors:
+      - Fatemeh Abedini
+      - Ghassem Gozaliasl
+      - Akram Hasani Zonoozi
+    more_authors: true
+    journal: MNRAS
+    abbr: MNRAS
+    volume: "548"
+    pages: "stag337"
+    doi: "10.1093/mnras/stag337"
+    arxiv: "2506.04138"
+
+  - title: "Discovery of a Little Red Dot Candidate at z ≳ 10 in COSMOS-Web Based on MIRI-NIRCam Selection"
+    authors:
+      - Takumi S. Tanaka
+      - Hollis B. Akins
+      - Yuichi Harikane
+    more_authors: true
+    journal: ApJ
+    abbr: ApJ
+    volume: "995"
+    pages: "21"
+    doi: "10.3847/1538-4357/ae145f"
+    arxiv: "2508.00057"
+
+  - title: "Resolving the ionizing photon budget crisis with JWST/NIRCam HII clumping constraints at z = 6"
+    authors:
+      - Duncan Austin
+      - Thomas Harvey
+      - Christopher J. Conselice
+    more_authors: true
+    abbr: arXiv
+    arxiv: "2512.10839"
+    # submitted_to: MNRAS
+
+  - title: "First light and reionization epoch simulations (FLARES) – XIX. Supermassive black hole mergers in the early Universe and their environmental dependence"
+    authors:
+      - Shihong Liao
+      - Dimitrios Irodotou
+      - Maxwell G. A. Maltz
+    more_authors: true
+    journal: MNRAS
+    abbr: MNRAS
+    volume: "543"
+    pages: "3055"
+    doi: "10.1093/mnras/staf1642"
+    arxiv: "2505.12591"
+
+  - title: "The COSMOS-Web Lens Survey (COWLS) III: forecasts versus data"
+    authors:
+      - Natalie B. Hogg
+      - James W. Nightingale
+      - Quihan He
+    more_authors: true
+    journal: MNRAS
+    abbr: MNRAS
+    volume: "544"
+    pages: "782"
+    doi: "10.1093/mnras/staf1678"
+    arxiv: "2503.08785"
+
+  - title: "Physical properties of galaxies and the UV Luminosity Function from z ∼ 6 to z ∼ 14 in COSMOS-Web"
+    authors:
+      - Maximilien Franco
+      - Caitlin M. Casey
+      - Hollis B. Akins
+    more_authors: true
+    abbr: arXiv
+    arxiv: "2508.04791"
+    # submitted_to: ApJ
+
+  - title: "First Light and Reionization Epoch Simulations (FLARES) – XV: The physical properties of super-massive black holes and their impact on galaxies in the early universe"
+    authors:
+      - Stephen Wilkins
+      - Jussi K. Kuusisto
+      - Dimitrios Irodotou
+    more_authors: true
+    journal: The Open Journal of Astrophysics
+    abbr: OJAp
+    volume: "8"
+    pages: "29"
+    doi: "10.33232/001c.132374"
+    arxiv: "2404.02815"

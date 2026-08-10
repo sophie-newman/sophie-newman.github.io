@@ -655,8 +655,15 @@ h2.bibliography {
 }
 
 .publications ol.bibliography .author,
+.publications ol.bibliography .citation,
 .publications ol.bibliography .periodical {
   font-size: 0.95rem;
+}
+
+/* My own name in an author list. */
+.publications ol.bibliography .me {
+  font-weight: 700;
+  color: var(--global-theme-color);
 }
 
 .publications ol.bibliography .author > em {
