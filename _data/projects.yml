@@ -1,4 +1,4 @@
-- title: "Cloudy-Maraston"
+- title: "Modelling Nebular Emission Lines"
   description_html: |
     <p>Stellar population synthesis models serve as indispensable tools for unraveling the intricate narrative of galaxy evolution, and
     allow physical parameters, such as stellar mass and stellar formation rate, to be inferred from spectrophotometric data through
@@ -13,7 +13,7 @@
     <p>The strengths of individual nebular emission lines are frequently measured and compared against models to constrain the abundances
     of different elements in the nebular cloud and the properties of the ionising stars. JWST has revealed large numbers of very young galaxies
     in the early Universe whose observed light is dominated by the surrounding gas, making accurate modelling of it essential for interpreting
-    observations, as shown in Vijayan et al. (2026), to which I was a major contributor. The Maraston models I used account for stellar rotation, and I found
+    observations, as shown in <a href="https://ui.adsabs.harvard.edu/abs/2026arXiv260727467V/abstract">Vijayan et al. (2026)</a>, to which I was a major contributor. The Maraston models I used account for stellar rotation, and I found
     that models built on different physical assumptions diverged substantially, with some single-star models predicting more high-energy line
     emission than models that include binary stars. These discrepancies show how the properties astrophysicists infer for galaxies, and the
     predictions generated from large cosmological simulations, can shift substantially depending on which stellar model is assumed, a
@@ -24,8 +24,27 @@
   papers:
     - label: "Newman et al. 2026, MNRAS"
       url: "https://doi.org/10.1093/mnras/staf1866"
+    - label: "Vijayan et al. 2026, arXiv"
+      url: "https://ui.adsabs.harvard.edu/abs/2026arXiv260727467V/abstract"
 
-- title: "Simulation-Based Inference"
+- title: "Testing the Newest Dust Prescriptions"
+  description_html: |
+    <p>To interpret observed galaxy populations, I combine stellar and AGN population synthesis models with cosmological simulations and semi-analytic models (SAMs)
+    of galaxy formation. These tools bridge small-scale physical processes, such as star formation and feedback, with large-scale structure
+    formation in the Universe.</p>
+    <p>I am preparing a publication testing whether relationships linking dust behaviour to a galaxy's physical properties, learned from the
+    IllustrisTNG50 and TNG100 simulations (Sommovigo et al. 2025), can be applied to semi-analytic models (Somerville et al. 2008). SAMs simulate
+    the formation and evolution of galaxies using simplified physical recipes rather than the full physics solved by a cosmological simulation,
+    and are consequently far cheaper to run. The key test is whether, when combined with these models, the dust relationships produce galaxy
+    population statistics that match those observed in the Universe. Our physically grounded dust relationships reproduce observed galaxy
+    population statistics well, showing that fast, cheap SAMs can now generate realistic mock observations directly comparable to real survey
+    data, without needing to run a full, expensive cosmological simulation each time.</p>
+    <p>I started this work as a Pre-Doctoral Researcher at the Center for Computational Astrophysics (CCA) with Rachel Somerville and Laura Sommovigo,
+    and will extend it to include the emission and attenuation of AGN as a member of the Learning the Universe collaboration.</p>
+  papers:
+    - label: "Newman et al in prep."
+
+- title: "Applying Simulation-Based Inference to Large Simulation Suites"
   description_html: |
     <p>Traditional approaches to parameter inference rely on explicit likelihood functions, which are often intractable in complex astrophysical
     models. Simulation-Based Inference (SBI) offers a powerful alternative by directly learning the mapping between simulated data and model
@@ -44,20 +63,3 @@
   papers:
     - label: "Harvey et al. 2026, MNRAS"
       url: "https://ui.adsabs.harvard.edu/abs/2026MNRAS.547ag282H/abstract"
-
-- title: "Working with Simulations and Semi-Analytic Models"
-  description_html: |
-    <p>To interpret observed galaxy populations, I combine stellar and AGN population synthesis models with cosmological simulations and semi-analytic models (SAMs)
-    of galaxy formation. These tools bridge small-scale physical processes, such as star formation and feedback, with large-scale structure
-    formation in the Universe.</p>
-    <p>I am preparing a publication testing whether relationships linking dust behaviour to a galaxy's physical properties, learned from the
-    IllustrisTNG50 and TNG100 simulations (Sommovigo et al. 2025), can be applied to semi-analytic models (Somerville et al. 2008). SAMs simulate
-    the formation and evolution of galaxies using simplified physical recipes rather than the full physics solved by a cosmological simulation,
-    and are consequently far cheaper to run. The key test is whether, when combined with these models, the dust relationships produce galaxy
-    population statistics that match those observed in the Universe. Our physically grounded dust relationships reproduce observed galaxy
-    population statistics well, showing that fast, cheap SAMs can now generate realistic mock observations directly comparable to real survey
-    data, without needing to run a full, expensive cosmological simulation each time.</p>
-    <p>I started this work as a Pre-Doctoral Researcher at the Center for Computational Astrophysics (CCA) with Rachel Somerville and Laura Sommovigo,
-    and will extend it to include the emission and attenuation of AGN as a member of the Learning the Universe collaboration.</p>
-  papers:
-    - label: "Newman et al in prep."
