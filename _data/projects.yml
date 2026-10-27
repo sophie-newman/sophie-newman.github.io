@@ -1,23 +1,16 @@
 - title: "Modelling Nebular Emission Lines"
   description_html: |
-    <p>Stellar population synthesis models serve as indispensable tools for unraveling the intricate narrative of galaxy evolution, and
-    allow physical parameters, such as stellar mass and stellar formation rate, to be inferred from spectrophotometric data through
-    fitting. They are also key for linking physical properties in theoretical models to their forward modelled emission. The advent
-    of the James Webb Space Telescope (JWST) has ushered in an era of abundant observations of young stellar populations at
-    high redshift, characterized by strong emission lines, motivating us to integrate nebular emission into the M13 stellar population
-    model.</p>
-    <p>This motivated me to use the photoionisation code Cloudy to add nebular emission to new stellar population models by Maraston.
-    I compared these to recent data by JWST and found that different modelling assumptions in stellar population models
-    lead to very different predictions for the strength of the [O III] line which can lead to qualitative errors and highlights
-    the need for careful model selection when interpreting observations.</p>
-    <p>The strengths of individual nebular emission lines are frequently measured and compared against models to constrain the abundances
-    of different elements in the nebular cloud and the properties of the ionising stars. JWST has revealed large numbers of very young galaxies
-    in the early Universe whose observed light is dominated by the surrounding gas, making accurate modelling of it essential for interpreting
-    observations, as shown in <a href="https://ui.adsabs.harvard.edu/abs/2026arXiv260727467V/abstract">Vijayan et al. (2026)</a>, to which I was a major contributor. The Maraston models I used account for stellar rotation, and I found
-    that models built on different physical assumptions diverged substantially, with some single-star models predicting more high-energy line
-    emission than models that include binary stars. These discrepancies show how the properties astrophysicists infer for galaxies, and the
-    predictions generated from large cosmological simulations, can shift substantially depending on which stellar model is assumed, a
-    source of uncertainty that had not previously been systematically quantified.</p>
+    <p>Stellar population synthesis models are essential for studying galaxy evolution: they let physical parameters such as stellar
+    mass and star formation rate be inferred from spectrophotometric data, and link theoretical models to their predicted emission.
+    JWST has revealed large numbers of very young, high-redshift galaxies whose light is dominated by strong
+    emission lines, making accurate nebular modelling essential, as shown in
+    <a href="https://ui.adsabs.harvard.edu/abs/2026arXiv260727467V/abstract">Vijayan et al. (2026)</a>, to which I was a major contributor.</p>
+    <p>Motivated by this, I used the photoionisation code Cloudy to add nebular emission to new Maraston stellar population models,
+    which account for stellar rotation, and compared the results with JWST data. Models built on different physical assumptions
+    diverged substantially, with some single-star models predicting more high-energy line emission, notably [O III], than
+    binary-star models. These discrepancies mean that galaxy properties inferred from observations, and predictions from
+    cosmological simulations, can shift significantly depending on the stellar model assumed, a source of uncertainty that had
+    not previously been systematically quantified and that highlights the need for careful model selection.</p>
   websites:
     - label: "Find my models here"
       url: "/cloudy-maraston/"
@@ -33,14 +26,13 @@
     of galaxy formation. These tools bridge small-scale physical processes, such as star formation and feedback, with large-scale structure
     formation in the Universe.</p>
     <p>I am preparing a publication testing whether relationships linking dust behaviour to a galaxy's physical properties, learned from the
-    IllustrisTNG50 and TNG100 simulations (Sommovigo et al. 2025), can be applied to semi-analytic models (Somerville et al. 2008). SAMs simulate
-    the formation and evolution of galaxies using simplified physical recipes rather than the full physics solved by a cosmological simulation,
+    IllustrisTNG50 and TNG100 simulations (<a href="https://ui.adsabs.harvard.edu/abs/2025ApJ...990..114S/abstract">Sommovigo et al. 2025</a>), 
+    can be applied to semi-analytic models (<a href="https://ui.adsabs.harvard.edu/abs/2008MNRAS.391..481S/abstract">Somerville et al. 2008</a>). 
+    SAMs simulate the formation and evolution of galaxies using simplified physical recipes rather than the full physics solved by a cosmological simulation,
     and are consequently far cheaper to run. The key test is whether, when combined with these models, the dust relationships produce galaxy
     population statistics that match those observed in the Universe. Our physically grounded dust relationships reproduce observed galaxy
     population statistics well, showing that fast, cheap SAMs can now generate realistic mock observations directly comparable to real survey
     data, without needing to run a full, expensive cosmological simulation each time.</p>
-    <p>I started this work as a Pre-Doctoral Researcher at the Center for Computational Astrophysics (CCA) with Rachel Somerville and Laura Sommovigo,
-    and will extend it to include the emission and attenuation of AGN as a member of the Learning the Universe collaboration.</p>
   papers:
     - label: "Newman et al in prep."
 
@@ -50,9 +42,6 @@
     models. Simulation-Based Inference (SBI) offers a powerful alternative by directly learning the mapping between simulated data and model
     parameters using machine learning. This framework allows one to extract posteriors even when the likelihood is unknown, by training neural
     networks on forward-modeled simulations.</p>
-    <p>I use SBI techniques such as neural density estimation to constrain physical parameters from simulated
-    galaxy spectra, photometry, and luminosity functions. By integrating simulation pipelines with inference frameworks, I can efficiently explore parameter spaces,
-    quantify uncertainties, and connect theoretical models directly to observations.</p>
     <p>I am currently applying SBI across several major cosmological simulation suites, including IllustrisTNG, SIMBA and EAGLE, to determine
     the dust prescriptions required to reproduce key observational constraints, such as the abundance of bright galaxies at different epochs in
     the Universe's history. SBI makes it possible to efficiently explore the high-dimensional parameter space of the dust models. By constraining
